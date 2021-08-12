@@ -5,10 +5,10 @@ def substrings(text, dictionary)
     substring_count[substring] += 1 if text.downcase.include? substring.downcase
   end
 
-p substring_count
+  return substring_count
 
 end
 
 dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","own","part","partner","sit"]
 
-substrings("Howdy!", dictionary)
+p substrings("Howdy!", dictionary)
